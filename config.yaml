@@ -1,0 +1,5 @@
+Rabbitmq:
+  url: "amqp://guest:guest@localhost:5672/"
+  email_queue: "email.queue"
+  push_queue: "push.queue"
+  exchange: "notification.direct"
