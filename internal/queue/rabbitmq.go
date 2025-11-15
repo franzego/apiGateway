@@ -10,6 +10,11 @@ import (
 	amqp "github.com/rabbitmq/amqp091-go"
 )
 
+type Queuer interface {
+	PublishEmail(message interface{}) error
+	PublishPush(message interface{}) error
+}
+
 type RabbitMqClient struct {
 	conn    *amqp.Connection
 	channel *amqp.Channel

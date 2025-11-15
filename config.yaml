@@ -3,3 +3,12 @@ Rabbitmq:
   email_queue: "email.queue"
   push_queue: "push.queue"
   exchange: "notification.direct"
+
+Services:
+  user_service_url: "localhost:8081"
+  template_service_url: "localhost:8082"
+
+Redis:
+  addr: "localhost:6379"
+  password: ""
+  Db: 0
